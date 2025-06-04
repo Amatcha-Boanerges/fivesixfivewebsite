@@ -15,7 +15,7 @@ const config: Config = {
         //'secondary': '#22a796',
         'neutral-dark': '#1C1C1C',
         'neutral-light': '#F7F8FA',
-        'primary': customColors.primary.DEFAULT, // Allows usage like `bg-primary`, `text-primary`
+        primary: customColors.primary,
         'secondary': customColors.secondary.DEFAULT, // `bg-secondary`, `text-secondary`
         // 'neutral-dark': customColors.neutral.dark, // `text-neutral-dark`
         // 'neutral-light': customColors.neutral.light, // `bg-neutral-light`

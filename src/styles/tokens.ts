@@ -1,6 +1,7 @@
 export const colors = {
     primary: {
       DEFAULT: '#c62f9d', // Your main primary color
+      focus: '#a0267e', // Darker shade for focus/hover
       // You can add shades if needed, e.g., light: '#...', dark: '#...'
     },
     secondary: {
