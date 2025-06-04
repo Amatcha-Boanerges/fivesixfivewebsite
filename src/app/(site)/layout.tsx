@@ -1,4 +1,5 @@
 import Navbar from '@/components/layout/Navbar'; // Using path alias
+import Footer from '@/components/layout/Footer'; // Using path alias
 
 export default function SiteLayout({
   children,
@@ -9,7 +10,7 @@ export default function SiteLayout({
     <div className="flex flex-col min-h-screen">
       <Navbar />
       <main className="flex-grow">{children}</main>
-      {/* Footer placeholder can go here */}
+      <Footer />
     </div>
   );
 } 
