@@ -16,7 +16,7 @@ const Footer = () => {
           </Link>
         </div>
         <p className="text-sm">
-          &copy; {currentYear} 565_WEBSITE. All rights reserved.
+          &copy; {currentYear} fivesixfive. All rights reserved.
         </p>
       </div>
     </footer>
