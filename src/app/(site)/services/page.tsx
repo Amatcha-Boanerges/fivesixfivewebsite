@@ -7,9 +7,9 @@ const ServicesPage = () => {
   return (
     <div className="container mx-auto py-12 px-4 sm:px-6 lg:px-8">
       <div className="text-center mb-12">
-        <h1 className="text-4xl font-bold">Our Services</h1>
-        <p className="text-lg text-neutral-600 mt-2">
-          Discover how we can help you transform your organization from the inside out.
+        <h1 className="text-4xl font-bold">Services That Turn Potential Into Performance.</h1>
+        <p className="text-lg text-neutral-600 mt-2 max-w-4xl mx-auto">
+          Choose a starting point or blend all three—each pathway aligns people, strategy, and culture for compounding results.
         </p>
       </div>
 
