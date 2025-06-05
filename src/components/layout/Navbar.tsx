@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { useState } from 'react';
+import Image from 'next/image';
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -22,8 +23,14 @@ const Navbar = () => {
     <nav className="bg-neutral-light/95 text-neutral-dark shadow-md sticky top-0 z-50 backdrop-blur-md">
       <div className="container mx-auto flex justify-between items-center px-4 sm:px-6 lg:px-8 h-14 md:h-16">
         {/* Logo */}
-        <Link href="/" className="text-2xl font-bold text-primary hover:text-primary-focus transition-colors">
-          565_WEBSITE
+        <Link href="/" className="hover:opacity-80 transition-opacity">
+          <Image
+            src="/image/fivesixfiveLogo transparent.svg"
+            alt="Fivesixfive Logo"
+            width={160}
+            height={40}
+            priority
+          />
         </Link>
 
         {/* Desktop Navigation Links */}

@@ -51,7 +51,7 @@ const Footer = () => {
         </div>
 
         {/* Legal & Copyright Section */}
-        <div className="border-t border-neutral-700 pt-6 mt-6 text-center">
+        <div className="border-t border-neutral-700 pt-4 mt-4 text-center">
           <div className="mb-2">
             <Link href="/privacy-policy" className="hover:text-primary text-sm mx-1">
               Privacy Policy
