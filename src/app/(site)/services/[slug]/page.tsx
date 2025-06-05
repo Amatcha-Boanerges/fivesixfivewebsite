@@ -41,10 +41,9 @@ const ServiceDetailPage = async ({ params }: PageProps) => {
 };
 
 // --- FIX IS HERE ---
-// Keep `async`, but `await` the async function call.
-// The return type annotation can also be simplified.
-export async function generateStaticParams(): Promise<PageParams[]> {
-  const slugs = await getAllServiceSlugs(); // Use await here
+// Remove `async` and the Promise return type
+export function generateStaticParams(): PageParams[] {
+  const slugs = getAllServiceSlugs();
   return slugs;
 }
 // --- END FIX ---
