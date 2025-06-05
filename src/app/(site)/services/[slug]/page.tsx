@@ -1,14 +1,24 @@
 import { getServiceBySlug, getAllServiceSlugs } from '@/lib/contentParser';
 import { MDXRemote } from 'next-mdx-remote/rsc';
+import { Metadata } from 'next';
 
-type PageProps = {
+type Props = {
   params: {
     slug: string;
   };
 };
 
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { slug } = params;
+  const { frontmatter } = getServiceBySlug(slug);
+  return {
+    title: `${frontmatter.title} | Fivesixfive`,
+    description: frontmatter.summary,
+  };
+}
+
 // This component fetches and displays a single service page.
-const ServiceDetailPage = async ({ params }: PageProps) => {
+const ServiceDetailPage = async ({ params }: Props) => {
   const { slug } = params;
   const { frontmatter, content } = getServiceBySlug(slug);
 
