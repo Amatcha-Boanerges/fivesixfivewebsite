@@ -40,10 +40,13 @@ const ServiceDetailPage = async ({ params }: PageProps) => {
   );
 };
 
-// Explicitly type the return value to match what Next.js expects
+// --- FIX IS HERE ---
+// Keep `async`, but `await` the async function call.
+// The return type annotation can also be simplified.
 export async function generateStaticParams(): Promise<PageParams[]> {
-  const slugs = getAllServiceSlugs();
+  const slugs = await getAllServiceSlugs(); // Use await here
   return slugs;
 }
+// --- END FIX ---
 
 export default ServiceDetailPage; 
