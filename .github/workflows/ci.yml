@@ -2,9 +2,9 @@ name: Next.js CI
 
 on:
   push:
-    branches: [ main, develop, feature/mdx-integration ]
+    branches: [ main, develop, feature/contact-form ]
   pull_request:
-    branches: [ main, develop, feature/mdx-integration ]
+    branches: [ main, develop, feature/contact-form ]
 
 jobs:
   build:
