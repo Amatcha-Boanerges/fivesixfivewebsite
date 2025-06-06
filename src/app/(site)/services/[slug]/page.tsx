@@ -1,6 +1,8 @@
 import { getServiceBySlug, getAllServiceSlugs } from '@/lib/contentParser';
 import { MDXRemote } from 'next-mdx-remote/rsc';
+import { Metadata } from 'next';
 
+<<<<<<< HEAD
 type PageProps = {
   params: Promise<{
     slug: string;
@@ -10,6 +12,24 @@ type PageProps = {
 // This component fetches and displays a single service page.
 const ServiceDetailPage = async (props: PageProps) => {
   const params = await props.params;
+=======
+type Props = {
+  params: { slug: string }
+  searchParams?: { [key: string]: string | string[] | undefined }
+}
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { slug } = params;
+  const { frontmatter } = getServiceBySlug(slug);
+  return {
+    title: `${frontmatter.title} | Fivesixfive`,
+    description: frontmatter.summary,
+  };
+}
+
+// This component fetches and displays a single service page.
+export default async function ServiceDetailPage({ params }: Props) {
+>>>>>>> 4157e21d1b2b1c5282a6b2d91701eea2995866eb
   const { slug } = params;
   const { frontmatter, content } = getServiceBySlug(slug);
 
@@ -25,11 +45,11 @@ const ServiceDetailPage = async (props: PageProps) => {
       </article>
     </div>
   );
-};
+}
 
 export async function generateStaticParams() {
   const slugs = getAllServiceSlugs();
-  return slugs;
-}
-
-export default ServiceDetailPage; 
+  return slugs.map((slug) => ({
+    slug,
+  }));
+} 
