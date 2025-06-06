@@ -4,7 +4,7 @@ import { Metadata } from 'next';
 
 type Props = {
   params: { slug: string }
-  searchParams: { [key: string]: string | string[] | undefined }
+  searchParams?: { [key: string]: string | string[] | undefined }
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
@@ -17,7 +17,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 // This component fetches and displays a single service page.
-const ServiceDetailPage = async ({ params }: Props) => {
+export default async function ServiceDetailPage({ params }: Props) {
   const { slug } = params;
   const { frontmatter, content } = getServiceBySlug(slug);
 
@@ -33,13 +33,11 @@ const ServiceDetailPage = async ({ params }: Props) => {
       </article>
     </div>
   );
-};
+}
 
 export async function generateStaticParams() {
   const slugs = getAllServiceSlugs();
   return slugs.map((slug) => ({
     slug,
   }));
-}
-
-export default ServiceDetailPage; 
+} 
