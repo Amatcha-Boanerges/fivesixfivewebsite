@@ -2,13 +2,14 @@ import { getServiceBySlug, getAllServiceSlugs } from '@/lib/contentParser';
 import { MDXRemote } from 'next-mdx-remote/rsc';
 
 type PageProps = {
-  params: {
+  params: Promise<{
     slug: string;
-  };
+  }>;
 };
 
 // This component fetches and displays a single service page.
-const ServiceDetailPage = async ({ params }: PageProps) => {
+const ServiceDetailPage = async (props: PageProps) => {
+  const params = await props.params;
   const { slug } = params;
   const { frontmatter, content } = getServiceBySlug(slug);
 
