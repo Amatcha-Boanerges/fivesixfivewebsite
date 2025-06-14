@@ -19,8 +19,8 @@ const Navbar = () => {
     { href: "/contact", label: "Contact" },
   ];
 
-  return (
-    <nav className="bg-neutral-light/95 text-neutral-dark shadow-md sticky top-0 z-50 backdrop-blur-md">
+  return ( 
+    <nav className="sticky top-0 z-50 bg-neutral-dark/95 text-neutral-light backdrop-blur-md shadow-md">
       <div className="container mx-auto flex justify-between items-center px-4 sm:px-6 lg:px-8 h-14 md:h-16">
         {/* Logo */}
         <Link href="/" className="hover:opacity-80 transition-opacity">
@@ -49,7 +49,7 @@ const Navbar = () => {
           <button
             onClick={toggleMobileMenu}
             aria-label="Toggle mobile menu"
-            className="text-neutral-dark hover:text-primary-focus focus:outline-none focus:ring-2 focus:ring-primary-focus rounded"
+            className="text-neutral-light hover:text-primary-focus focus:outline-none focus:ring-2 focus:ring-primary-focus rounded"
           >
             {isMobileMenuOpen ? (
               <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -66,7 +66,7 @@ const Navbar = () => {
 
       {/* Mobile Navigation Menu */}
       {isMobileMenuOpen && (
-        <div className="md:hidden bg-neutral-light/95 shadow-lg absolute top-full left-0 right-0 z-40 backdrop-blur-md">
+        <div className="md:hidden bg-neutral-dark/95 shadow-lg absolute top-full left-0 right-0 z-40 backdrop-blur-md">
           <ul className="flex flex-col items-center space-y-4 py-4">
             {navLinks.map((link) => (
               <li key={link.href}>
