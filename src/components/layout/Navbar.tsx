@@ -12,6 +12,7 @@ const Navbar = () => {
   };
 
   const navLinks = [
+    { href: "/PAConference", label: "PA Conference" }, // adding PA conference link
     { href: "/about", label: "About" },
     { href: "/services", label: "Services" },
     { href: "/events", label: "Events" },
