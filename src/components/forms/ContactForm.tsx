@@ -155,7 +155,7 @@ export default function ContactForm() {
           disabled={status === 'submitting'}
         />
         <label htmlFor="wantsDiscoveryCall" className="text-sm text-primary">
-          I'd like a discovery call
+          I&apos;d like a discovery call
         </label>
       </div>
 
