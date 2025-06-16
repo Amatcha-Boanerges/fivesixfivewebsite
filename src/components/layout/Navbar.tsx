@@ -12,7 +12,7 @@ const Navbar = () => {
   };
 
   const navLinks = [
-    { href: "/PAConference", label: "PA Conference" }, // adding PA conference link
+    { href: "/conference", label: "PA Conference" }, // adding PA conference link
     { href: "/about", label: "About" },
     { href: "/services", label: "Services" },
     { href: "/events", label: "Events" },
@@ -26,7 +26,7 @@ const Navbar = () => {
         {/* Logo */}
         <Link href="/" className="hover:opacity-80 transition-opacity">
           <Image
-            src="/image/fivesixfiveLogo transparent.svg"
+            src="/images/fivesixfiveLogo transparent.svg"
             alt="Fivesixfive Logo"
             width={160}
             height={40}

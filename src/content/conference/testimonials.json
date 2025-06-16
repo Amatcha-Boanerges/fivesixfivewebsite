@@ -1,0 +1,49 @@
+{
+  "testimonials": [
+    {
+      "id": 1,
+      "name": " Patience Ansah-Nartey",
+      "role": "Executive Secretary",
+      "company": "SSNIT",
+      "image": "/images/testimonials/Patience.webp",
+      "quote": "Every bit of the Conference was on point. You touched my emotions positively Self awareness Being intentional about things Because it's a good program for secretaries and PAs whose lives in the corporate revolve around their bosses",
+      "year": 2024
+    },
+    {
+      "id": 2,
+      "name": "Nesreen Aryeequaye",
+      "role": "Administrative Assistant",
+      "company": "National Petroleum Authority",
+      "image": "/images/testimonials/Nesreen.webp",
+      "quote": "The conference reignited my passion for administrative excellence and connected me with inspiring professionals across industries.",
+      "year": 2024
+    },
+    {
+      "id": 3,
+      "name": "Nadia Korankye Danquah",
+      "role": "IT Help Desk",
+      "company": "Kyrium Communications Tech Ltd",
+      "image": "/images/testimonials/Nadia.webp",
+      "quote": "A powerful blend of personal development and practical insights that I can immediately apply at work.",
+      "year": 2024
+    },
+    {
+      "id": 4,
+      "name": "Emmanuel Tsebi Nartey",
+      "role": "Administrative Assistant",
+      "company": "University of Ghana-Logistics Directorate",
+      "image": "/images/testimonials/Emmanuel.webp",
+      "quote": "From branding to self-leadership, the sessions were empowering and deeply relevant to my career goals.",
+      "year": 2024
+    },
+    {
+      "id": 5,
+      "name": "Afia Nkrumah Owusu",
+      "role": "Administrative Assistant",
+      "company": "National Petroleum Authority",
+      "image": "/images/testimonials/Afia.webp",
+      "quote": "This conference gave me the tools to reflect, grow, and take strategic steps in my professional journey.",
+      "year": 2024
+    }
+  ]
+} 
