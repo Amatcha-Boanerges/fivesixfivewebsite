@@ -2,9 +2,9 @@ name: Next.js CI
 
 on:
   push:
-    branches: [ main, develop, feature/contact-form ]
+    branches: [ main, develop, feature/contact-form, feature/paconf-landingpage ]
   pull_request:
-    branches: [ main, develop, feature/contact-form ]
+    branches: [ main, develop, feature/contact-form, feature/paconf-landingpage ]
 
 jobs:
   build:
